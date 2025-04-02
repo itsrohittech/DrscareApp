@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".assessment_of_patients">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/my_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="61dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/my_primary"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/assessment_of_patients"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ScrollView
+        android:id="@+id/ScrollF"
+        android:layout_width="415dp"
+        android:layout_height="614dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="UselessLeaf,SpeakableTextPresentCheck">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="168dp"
+                android:gravity="center"
+                android:text="@string/yes"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="108dp"
+                android:gravity="center"
+                android:text="@string/no"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="81dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/gender"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="380dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+            <RadioGroup
+                android:id="@+id/rbg1"
+                android:layout_width="110dp"
+                android:layout_height="109dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view7"
+                app:layout_constraintEnd_toEndOf="@+id/view7"
+                app:layout_constraintHorizontal_bias="0.677"
+                app:layout_constraintStart_toStartOf="@+id/view7">
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="40dp"/>
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginStart="40dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/male"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view7"
+                app:layout_constraintTop_toTopOf="@+id/view7" />
+
+            <TextView
+                android:id="@+id/textView81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/female"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view7"
+                app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+            <TextView
+                android:id="@+id/textView82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/age"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+            <View
+                android:id="@+id/view35"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+            <RadioGroup
+                android:id="@+id/rbg2"
+                android:layout_width="109dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view35"
+                app:layout_constraintEnd_toEndOf="@+id/view35"
+                app:layout_constraintHorizontal_bias="0.677"
+                app:layout_constraintStart_toStartOf="@+id/view35">
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="25dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/more_than_40_years"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view35"
+                app:layout_constraintTop_toTopOf="@+id/view35" />
+
+
+
+            <TextView
+                android:id="@+id/textView84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/less_than_40_years"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view35"
+                app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+
+
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/symptoms"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view35" />
+
+            <View
+                android:id="@+id/view36"
+                android:layout_width="380dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+            <RadioGroup
+                android:id="@+id/rbg3"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/view36"
+                app:layout_constraintEnd_toEndOf="@+id/view36"
+                app:layout_constraintHorizontal_bias="0.71"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toTopOf="@+id/view36"
+                app:layout_constraintVertical_bias="0.0">
+
+                <RadioButton
+                    android:id="@+id/rb5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg4"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="256dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/view36"
+                app:layout_constraintEnd_toEndOf="@+id/view36"
+                app:layout_constraintHorizontal_bias="0.71"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/rbg3">
+
+                <RadioButton
+                    android:id="@+id/rb7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg5"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="256dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/view36"
+                app:layout_constraintEnd_toEndOf="@+id/view36"
+                app:layout_constraintHorizontal_bias="0.71"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/rbg4"
+                app:layout_constraintVertical_bias="0.0">
+
+                <RadioButton
+                    android:id="@+id/rb9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb10"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg6"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="45dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view36"
+                app:layout_constraintHorizontal_bias="0.71"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/rbg4">
+
+                <RadioButton
+                    android:id="@+id/rb11"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb12"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg7"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="132dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view36"
+                app:layout_constraintHorizontal_bias="0.706"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/rbg3">
+
+                <RadioButton
+                    android:id="@+id/rb13"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb14"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg8"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="176dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view36"
+                app:layout_constraintHorizontal_bias="0.706"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/rbg3">
+
+                <RadioButton
+                    android:id="@+id/rb15"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb16"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg9"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="224dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view36"
+                app:layout_constraintHorizontal_bias="0.71"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/rbg3">
+
+                <RadioButton
+                    android:id="@+id/rb17"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb18"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/rif_pain"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toTopOf="@+id/view36" />
+
+            <TextView
+                android:id="@+id/textView87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/anorexia"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+
+
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/migratory_pain"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+
+
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/nausea_vomiting"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+
+
+            <TextView
+                android:id="@+id/textView90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/less_than_24_hours"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/more_than_24_hours"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+
+            <TextView
+                android:id="@+id/textView92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/fever"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+
+            <TextView
+                android:id="@+id/textView93"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="@string/_37c_or_39c"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/view36"
+                app:layout_constraintTop_toBottomOf="@+id/textView92" />
+
+            <TextView
+                android:id="@+id/textView94"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/signs"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view36" />
+
+            <View
+                android:id="@+id/view37"
+                android:layout_width="380dp"
+                android:layout_height="230dp"
+                android:layout_marginTop="28dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView94" />
+
+            <RadioGroup
+                android:id="@+id/rbg10"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view37"
+                app:layout_constraintHorizontal_bias="0.713"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toTopOf="@+id/view37">
+
+                <RadioButton
+                    android:id="@+id/rb19"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb20"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg11"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="48dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view37"
+                app:layout_constraintHorizontal_bias="0.71"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toTopOf="@+id/view37">
+
+                <RadioButton
+                    android:id="@+id/rb21"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb22"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg12"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="91dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view37"
+                app:layout_constraintHorizontal_bias="0.713"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toTopOf="@+id/view37">
+
+                <RadioButton
+                    android:id="@+id/rb23"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb24"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg13"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="136dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view37"
+                app:layout_constraintHorizontal_bias="0.713"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toTopOf="@+id/view37">
+
+                <RadioButton
+                    android:id="@+id/rb25"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb26"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg14"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="184dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view37"
+                app:layout_constraintHorizontal_bias="0.713"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toTopOf="@+id/view37">
+
+                <RadioButton
+                    android:id="@+id/rb27"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb28"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/melbourney_tenderness"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toTopOf="@+id/view37" />
+
+
+            <TextView
+                android:id="@+id/textView96"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/prebound_tenderness"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+
+
+            <TextView
+                android:id="@+id/textView97"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/guarding"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+            <TextView
+                android:id="@+id/textView98"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/rovsing_sign"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+
+            <TextView
+                android:id="@+id/textView99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/leucoytosis"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toBottomOf="@+id/textView98" />
+
+
+            <TextView
+                android:id="@+id/textView100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/more_than_10000"
+                app:layout_constraintStart_toStartOf="@+id/view37"
+                app:layout_constraintTop_toBottomOf="@+id/textView99" />
+
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/radiological_investigation_optional_clicking"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view37" />
+
+
+            <View
+                android:id="@+id/view38"
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="84dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view37" />
+
+            <RadioGroup
+                android:id="@+id/rbg15"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view38"
+                app:layout_constraintHorizontal_bias="0.713"
+                app:layout_constraintStart_toStartOf="@+id/view38"
+                app:layout_constraintTop_toTopOf="@+id/view38">
+
+                <RadioButton
+                    android:id="@+id/rb29"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb30"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg16"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="44dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view38"
+                app:layout_constraintHorizontal_bias="0.71"
+                app:layout_constraintStart_toStartOf="@+id/view38"
+                app:layout_constraintTop_toTopOf="@+id/view38">
+
+                <RadioButton
+                    android:id="@+id/rb31"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="TooManyViews" />
+
+                <RadioButton
+                    android:id="@+id/rb32"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rbg17"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="90dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/view38"
+                app:layout_constraintHorizontal_bias="0.71"
+                app:layout_constraintStart_toStartOf="@+id/view38"
+                app:layout_constraintTop_toTopOf="@+id/view38">
+
+                <RadioButton
+                    android:id="@+id/rb33"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/rb34"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/usg_probe_tenderness"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view38"
+                app:layout_constraintTop_toTopOf="@+id/view38" />
+
+
+            <TextView
+                android:id="@+id/textView103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/presence_of_appendicolith"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view38"
+                app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
+
+            <TextView
+                android:id="@+id/textView104"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/diameter_of_appendix"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view38"
+                app:layout_constraintTop_toBottomOf="@+id/textView103" />
+
+
+            <TextView
+                android:id="@+id/textView105"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/_2_significant"
+                app:layout_constraintStart_toStartOf="@+id/view38"
+                app:layout_constraintTop_toBottomOf="@+id/textView104" />
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toTopOf="@+id/view7"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView135"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView134" />
+
+            <TextView
+                android:id="@+id/textView136"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toTopOf="@+id/view35" />
+
+            <TextView
+                android:id="@+id/textView137"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView136"
+                tools:ignore="TooManyViews,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView138"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toTopOf="@+id/view36" />
+
+            <TextView
+                android:id="@+id/textView139"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView138" />
+
+            <TextView
+                android:id="@+id/textView140"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView139"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView141"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView140" />
+
+            <TextView
+                android:id="@+id/textView142"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="332dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView141"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView143"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView142"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView144"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView143"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView145"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toTopOf="@+id/view37" />
+
+            <TextView
+                android:id="@+id/textView146"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView145" />
+
+            <TextView
+                android:id="@+id/textView147"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView146" />
+
+            <TextView
+                android:id="@+id/textView148"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView147" />
+
+            <TextView
+                android:id="@+id/textView149"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView148" />
+
+            <TextView
+                android:id="@+id/textView150"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toTopOf="@+id/view38" />
+
+            <TextView
+                android:id="@+id/textView151"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView150" />
+
+            <TextView
+                android:id="@+id/textView152"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="335dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView151" />
+
+            <CheckBox
+                android:id="@+id/checkBox55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.531"
+                app:layout_constraintStart_toEndOf="@+id/textView101"
+                app:layout_constraintTop_toBottomOf="@+id/view37" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/save"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Clear"
+        android:layout_marginStart="170dp"
+        android:layout_marginBottom="15dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

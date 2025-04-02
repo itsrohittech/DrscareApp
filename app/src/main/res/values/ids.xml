@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="buttonPanel" type="id" />
+    <item name="textViewEmail" type="id" />
+    <item name="editTextEmail" type="id" />
+    <item name="textViewChangePassword" type="id" />
+    <item name="editTextChangePassword" type="id" />
+    <item name="textViewReenterPassword" type="id" />
+    <item name="TextViewMobileNumber" type="id" />
+    <item name="TextViewEmail" type="id" />
+    <item name="TextViewChangePassword" type="id" />
+    <item name="editText23" type="id"/>
+    <item name="Textview_Qualification" type="id"/>
+    <item name="editText_Qualification" type="id"/>
+    <item name="textViewExperience" type="id"/>
+    <item name="editTextExperience" type="id"/>
+
+
+</resources>

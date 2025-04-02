@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DrsCareApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientProfileShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorProfileShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DuplicateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".emp"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsPatientsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".content_patientprofile"
+            android:exported="false" />
+        <activity
+            android:name=".addpatientoverlay"
+            android:exported="false" /> <!-- Add declarations for other activities as needed -->
+        <activity
+            android:name=".about_us"
+            android:exported="false" />
+        <activity
+            android:name=".ContentDoctorprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".side_menu_items"
+            android:exported="false" />
+        <activity
+            android:name=".patient_profile"
+            android:exported="false" />
+        <activity
+            android:name=".content_patient_homepage"
+            android:exported="false" />
+        <activity
+            android:name=".delete_confirmation"
+            android:exported="false" />
+        <activity
+            android:name=".doctor_profile_update"
+            android:exported="false" />
+        <activity
+            android:name=".content_scale_based_on_score"
+            android:exported="false" />
+        <activity
+            android:name=".Content_Assessment_Of_Patients"
+            android:exported="false" />
+        <activity
+            android:name=".content_list_of_doctors"
+            android:exported="false" />
+        <activity
+            android:name=".score_results_for_patients"
+            android:exported="false" />
+        <activity
+            android:name=".content_about_appendicitis"
+            android:exported="false" />
+        <activity
+            android:name=".about_for_patients"
+            android:exported="false" />
+        <activity
+            android:name=".doctor_details"
+            android:exported="false" />
+        <activity
+            android:name=".patient_details2"
+            android:exported="false" />
+        <activity
+            android:name=".patient_homepage"
+            android:exported="false" />
+        <activity
+            android:name=".score_results"
+            android:exported="false" />
+        <activity
+            android:name=".assessment_of_patients"
+            android:exported="false" />
+        <activity
+            android:name=".add_patients"
+            android:exported="false" />
+        <activity
+            android:name=".Trying_page_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor_profile"
+            android:exported="false" />
+        <activity
+            android:name=".java_default_score"
+            android:exported="false" />
+        <activity
+            android:name=".java_your_appointments"
+            android:exported="false" />
+        <activity
+            android:name=".java_doctor_homepage"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden"
+            android:exported="false" />
+        <activity
+            android:name=".java_doctor_login"
+            android:exported="false" />
+        <activity
+            android:name=".java_choose_acc_type"
+            android:exported="false" />
+        <activity
+            android:name=".java_patient_data"
+            android:exported="false" />
+        <activity
+            android:name=".patient_login"
+            android:exported="false" />
+        <activity
+            android:name=".patient_details"
+            android:exported="false" />
+        <activity
+            android:name=".View_score"
+            android:exported="false" />
+        <activity
+            android:name=".java_get_started"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

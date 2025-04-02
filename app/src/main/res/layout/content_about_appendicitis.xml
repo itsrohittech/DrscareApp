@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="1623dp"
+    tools:context=".content_about_appendicitis"
+    tools:ignore="TextSizeCheck">
+
+    <View
+        android:id="@+id/view29"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/inside_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/what_is_appendicitis"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view29"
+        app:layout_constraintTop_toTopOf="@+id/view29" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/image35"
+        app:layout_constraintBottom_toBottomOf="@+id/view29"
+        app:layout_constraintEnd_toEndOf="@+id/view29"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/paragraphTextView"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/appendicitis_is_an_inflammation_of_the_appendix_a_small_pouch_like_structure_attached_to_the_colon_on_the_lower_right_side_of_the_abdomen_the_exact_function_of_the_appendix_is_not_well_understood_and_its_removal_does_not_appear_to_affect_a_person_s_health"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view29"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <View
+        android:id="@+id/view30"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/inside_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view29" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/symptoms_of_appendicitis"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view30"
+        app:layout_constraintTop_toTopOf="@+id/view30" />
+
+    <ImageView
+        android:layout_width="284dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/image_36"
+        app:layout_constraintEnd_toEndOf="@+id/view30"
+        app:layout_constraintStart_toStartOf="@+id/view30"
+        app:layout_constraintTop_toBottomOf="@+id/textView65"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <View
+        android:id="@+id/view31"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/inside_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view30" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/what_are_the_risk_factors_of_appendicitis"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view31"
+        app:layout_constraintTop_toTopOf="@+id/view31" />
+
+    <TextView
+        android:id="@+id/paragraphTextView2"
+        android:layout_width="314dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/risk_factors_of_appendicitis"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/view31"
+        app:layout_constraintTop_toBottomOf="@+id/textView67"
+        tools:ignore="TextSizeCheck" />
+
+    <View
+        android:id="@+id/view32"
+        android:layout_width="350dp"
+        android:layout_height="900dp"
+        android:layout_marginBottom="68dp"
+        android:background="@color/inside_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/what_are_the_treatment_options_for_appendicitis"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view32"
+        app:layout_constraintTop_toTopOf="@+id/view32" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="303dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="56dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/image37"
+        app:layout_constraintEnd_toEndOf="@+id/view32"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/view32"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <TextView
+        android:id="@+id/textView130"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/conservative_management"
+        app:layout_constraintStart_toStartOf="@+id/view32"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="@+id/view32"
+        app:layout_constraintStart_toStartOf="@+id/view32"
+        app:layout_constraintTop_toBottomOf="@+id/textView130"
+        app:srcCompat="@drawable/cons_image"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView131"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/laparoscopic_appendectomy"
+        app:layout_constraintBottom_toTopOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="@+id/view32" />
+
+    <TextView
+        android:id="@+id/textView132"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/open_appendectomy"
+        app:layout_constraintStart_toStartOf="@+id/view32"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="44dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/view32"
+        app:layout_constraintStart_toStartOf="@+id/view32"
+        app:srcCompat="@drawable/open_appen" />
+
+    <TextView
+        android:id="@+id/textView133"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginEnd="151dp"
+        android:text="@string/iv_fluids_and_antibiotics"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="@+id/view32"
+        app:layout_constraintStart_toStartOf="@+id/view32" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
